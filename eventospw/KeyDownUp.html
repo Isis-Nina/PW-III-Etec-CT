@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <title>onKeyDown e onKeyUp</title>
+</head>
+<body>
+    <div class="card">
+        <h1>onKeyDown e onKeyUp</h1>
+        <p >O <strong> onkeydown</strong> detecta quando a tecla é pressionada, e o</p>
+        <p> <strong> onKeyUp</strong>  detecta quando a tecla não esta mais sendo pressionada.</p>
+        <p>Exemplo: Mostrar uma mensagem de <strong> Down</strong>  quando qualquer tecla  </p>
+        <p>for pressionada e <strong> UP</strong> quando a tecla for solta.</p>
+        Insira uma letra: <input type="text" id="name" onkeydown="down()" onkeyup="up()">
+        <p id="status"></p>
+    </div>
+
+    <a href="index.html">Início</a>
+
+    <script src="./js/keyboard.js"></script>
+
+</body>
+</html>

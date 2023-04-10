@@ -1,0 +1,88 @@
+*{
+    margin: 10px;
+}
+
+body{
+    font-size: 1.5em;
+    margin: 12%;
+    text-align: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    color: #e1bff0;
+}
+
+.card{
+    background-color: #151111;
+    border-radius: 10px ;
+    padding: 20px;
+    border-left: 10px solid #686869;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #fbffff;
+    color:#000000;
+    border: none;
+    padding: 10px 40px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 8px 8px 8px 8px;
+}
+
+button:hover{
+    background-color: #e3dcdc;
+    transition: 500ms;
+    
+}
+
+a{
+    margin: 5%;
+    padding: 8px 50px;
+    background-color:  #e78ee9;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 90%;
+}
+a:hover{
+    background-color:  #414144;
+    transition: 500ms;
+    
+}
+
+input{
+    padding: 8px 10px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #19191b;
+}
+
+.inicio{
+    font-size: 90px;
+    margin-top: -10%;
+    margin-bottom: 5%;
+    color: rgb(0, 0, 0);
+}
+
+.text{
+    color:#ffffff;
+}
+
+.linha{
+    margin-top: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px ;
+    padding: 20px;
+    border-left: 10px solid #686869;
+    border-right: 10px solid #686869;
+}
+
+.coluna{
+    width:20%;
+    margin: 20px;
+   
+}
