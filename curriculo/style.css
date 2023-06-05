@@ -1,0 +1,226 @@
+:root {
+    --background: #F6F6F6;
+    --darkBlue: #000000;
+}
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    height: 100;
+    padding: 2rem 4rem;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    margin-top: -14%;
+    margin-bottom: 5%;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+body {
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    color: #000000;
+    flex-direction: column;
+    background: #0000004d;
+    background: -webkit-linear-gradient(to right, #be87c04d, #be87c04d);
+    background: linear-gradient(to right, #be87c04d, #be87c04d);
+}
+
+header {    
+    background: rgba(185, 185, 185, 0.068);
+    border-bottom: 1px solid rgb(17, 16, 16);
+    padding: 1rem 2rem; 
+    font-weight: 900;
+}
+
+h1 {
+    color: var(--darkBlue);
+    font-size: 3rem;
+}
+
+h2 {
+    display: flex;
+    color: var(--darkBlue);
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+button{
+    background-color: #ef9eca;
+    color:#000000;
+    border: none;
+    padding: 10px 40px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 8px 8px 8px 8px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+informacoes{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+form input[type="text"] {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 1.2rem 0rem;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #F6F6F6;
+    
+    
+    
+}
+
+form input:focus {
+    outline: none;
+}
+
+form input::placeholder {
+    color: var(--black);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    background: var(--lightBlue);
+    padding: 2rem 4rem;
+    width: 60%;
+    height: 100%;
+
+
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #4d4a4a;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:inline-block;
+    margin:5px 0px;
+    padding: 0;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+form input[type="submit"] {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 1.2rem 0rem;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #F6F6F6;
+}
+.inp{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 1.2rem 0rem;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #f6fff6
+}
+
+form input[type="submit"]:hover {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 1.2rem 0rem;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #F6F6F6;
+    
+
+}
+.for{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    padding: 0rem 4rem;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    width: 50%;
+    height: 450%;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px 0px #000000;    
+   
+
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        height: 100%;
+    }
+
+    aside img {
+        width: 100%;
+        height: 100%;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        border-left: none;
+        border-top: 1px solid var(--darkBlue);
+        border-radius: 10;
+    }
+
+}
+
+
+
