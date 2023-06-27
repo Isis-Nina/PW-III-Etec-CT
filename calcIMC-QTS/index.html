@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de IMC</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+
+    <label for="nome">Nome:</label>
+    <input id="nome" name="nome" type="text" placeholder="digite seu nome " class="campo" onkeypress="return ApenasLetras(event,this);">
+    
+
+    <label for="peso">Peso (em kg):</label>
+    <input id="peso" name="peso" type="number" placeholder="digite o seu peso" class="campo campo-medio"  max="500"><br><br>
+
+
+<label for="altura">Altura (em metros)</label>
+<input type="number" id="altura" name="altura" placeholder=" Ex: 1.80 "  inputmode="numeric" oninput="formatarAltura()"><br><br>
+
+   
+    <label for="idade">Idade:</label>
+<input type="number" id="idade" name="idade" placeholder="digite sua idade" max="200"><br><br>
+
+   
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p id="resultado"></p>
+</body>
+</html>
