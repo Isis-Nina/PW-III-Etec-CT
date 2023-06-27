@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>  Cubo 3D com Three.js</title>
+  <link rel="stylesheet" href="cubo.css">
+</head>
+  <style>
+    body { margin: 0; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> Cubo 3D com Three.js</h1>
+    <button onclick="location.href='circulo3d.html'">Próxima figura</button>
+    <div id="canvas-container">
+    </div>
+   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+    // Código JavaScript para criar uma cena simples com um cubo
+    // Usaremos a função init() para inicializar a cena e a função animate() para atualizá-la continuamente
+
+    // Variáveis globais
+    let scene, camera, renderer, cube;
+
+    // Função de inicialização
+    function init() {
+      
+      // Criar cena
+      scene = new THREE.Scene();
+
+      // Criar câmera
+      camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 8000);
+      camera.position.z = 5;
+
+      // Criar renderizador
+      renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      var container = document.getElementById("canvas-container");
+      container.appendChild(renderer.domElement);
+
+      // Criar geometria e material
+      const geometry = new THREE.BoxGeometry();
+      
+
+
+      // Cor do material
+      var material = new THREE.MeshBasicMaterial({ color: 0xFF69B4 });
+
+
+      // Criar cubo e adicioná-lo à cena
+      cube = new THREE.Mesh(geometry, material);
+      scene.add(cube);
+    }
+
+    // Função de animação
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Girar o cubo
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      // Renderizar cena
+      renderer.render(scene, camera);
+    }
+
+    // Chamar a função de inicialização e iniciar a animação
+    init();
+    animate();
+    
+    
+    </script>
+
+
+</body>
+</html>

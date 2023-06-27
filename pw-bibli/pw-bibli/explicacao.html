@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formas 3D</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body { margin: 0; }
+    canvas { display: block; }
+    body {
+        text-align: center;
+    background-color: #030303;
+    display: flex;
+    justify-content: center;
+    position: center;
+}
+h1 {
+    color: #fdfdfd;
+}
+p {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+
+  </style>
+<body>
+  <div class="container">
+    <h1>Sobre a biblioteca Three.js </h1>
+    
+    <div id="canvas-container"></div>
+    <div id="explanation">
+      <h2>Explorando Formas 3D com Three.js</h2>
+      <p>
+        A biblioteca Three.js é uma poderosa ferramenta para a criação de gráficos 3D interativos em navegadores web. <br>
+        Ela simplifica a complexidade do WebGL, fornecendo uma interface fácil de usar para renderização, animação e interação com objetos 3D.
+      </p>
+      <p>
+        Nesta página, demonstramos o uso da biblioteca Three.js para exibir três formas geométricas: um cubo verde, um cilindro azul e uma esfera vermelha. <br>
+        As formas são posicionadas na cena 3D e animadas para girar continuamente.
+      </p>
+      <p>
+        Através do JavaScript e do WebGL, a biblioteca Three.js oferece uma experiência imersiva, permitindo <br> a criação de jogos, visualizações científicas, ambientes virtuais e muito mais.
+      </p>
+
+     <br>  <button onclick="location.href='index.html'">início</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script3.js"></script>
+</body>
+</html>
